@@ -13,16 +13,16 @@ START_TEXT = """ Your Telegram DC Is : `{}`  """
 @StreamBot.on_message(filters.regex("maintainers😎"))
 async def maintainers(b,m):
     try:
-       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
+       await b.send_message(chat_id=m.chat.id,text="Jay Shri Krishna",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [Adarsh Goel](https://github.com/adarsh-goel)",
+                    text="I am Coded By [Blue Eyes](https://github.com/blue-eyes2022)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Developer💻", url=f"https://github.com/adarsh-goel")
+                                InlineKeyboardButton("Developer💻", url=f"https://github.com/blue-eyes2022")
                             ]
                         ]
                     ),
@@ -33,7 +33,7 @@ async def maintainers(b,m):
 @StreamBot.on_message(filters.regex("follow❤️"))
 async def follow_user(b,m):
     try:
-       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
+       await b.send_message(chat_id=m.chat.id,text="Jay Shri Krishna",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://GITHUB.COM/adarsh-goel")
+                                InlineKeyboardButton("FOLLOW ME", url=f"https://github.com/blue-eyes2022")
                             ]
                         ]
                     ),
@@ -63,7 +63,7 @@ async def start(bot, update):
     
 @StreamBot.on_message(filters.command("list"))
 async def list(l, m):
-    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3. `login🔑` \n 4.`follow❤️` \n 5. `ping📡` \n 6. `status📊` \n 7. `DC` this tells your telegram dc \n 8. `maintainers😎` "
+    LIST_MSG = "Jay Shri Krishna! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3. `login🔑` \n 4.`follow❤️` \n 5. `ping📡` \n 6. `status📊` \n 7. `DC` this tells your telegram dc \n 8. `maintainers😎` "
     await l.send_message(chat_id = m.chat.id,
         text = LIST_MSG.format(m.from_user.mention(style="md")),
         reply_to_message_id = m.message_id,
@@ -77,7 +77,7 @@ async def ping(b, m):
     ag = await m.reply_text("....")
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
-    await ag.edit(f"Pong!\n{time_taken_s:.3f} ms")
+    await ag.edit(f"Ping!\n{time_taken_s:.3f} ms")
     
     
     
